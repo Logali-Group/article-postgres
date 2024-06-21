@@ -1,0 +1,19 @@
+{
+  "name": "postgres",
+  "version": "1.0.0",
+  "description": "Cloud application programming model connected to postgres",
+  "repository": "https://github.com/Logali-Group/article-postgres.git",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@cap-js/postgres": "^1.8.0",
+    "@sap/cds": "^7.9.2",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^1"
+  },
+  "scripts": {
+    "start": "cds-serve"
+  }
+}
