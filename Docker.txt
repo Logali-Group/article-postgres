@@ -1,0 +1,1 @@
+docker run -d --name relationships -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=postgres -p 1000:5432 postgres:alpine3.18

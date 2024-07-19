@@ -6,14 +6,28 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "@cap-js/postgres": "^1.8.0",
-    "@sap/cds": "^7.9.2",
+    "@cap-js/postgres": "^1.9.1",
+    "@sap/cds": "^8.0.4",
+    "@sap/cds-dk": "^8.0.2",
     "express": "^4.19.2"
   },
   "devDependencies": {
     "@cap-js/sqlite": "^1"
   },
+  "cds": {
+    "requires": {
+      "db": {
+        "[pg]":{
+          "kind": "postgres",
+          "model":[
+            "srv",
+            "db"
+          ]
+        }
+      }
+    }
+  },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve --profile pg"
   }
 }
